@@ -36,7 +36,7 @@
             margin: 0 auto;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        input[type="text"], input[type="tel"] {
+        input[type="text"], input[type="tel"], input[type="email"] {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
@@ -76,8 +76,12 @@
     <div class="section form-container">
         <h2>Запишись на курс!</h2>
         <form action="https://formspree.io/f/mnnploeq" method="POST">
-            <input type="text" name="name" placeholder="Ваше ім'я" required>
-            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+            <label for="name">Ваше ім'я:</label><br>
+            <input type="text" name="name" id="name" placeholder="Ваше ім'я" required><br>
+
+            <label for="phone">Ваш телефон:</label><br>
+            <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" required><br>
+
             <button type="submit">Записатись</button>
         </form>
     </div>
